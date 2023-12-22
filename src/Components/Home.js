@@ -108,6 +108,17 @@ const Home = () => {
           }}
           modules={[Pagination]}
           className="mySwiper w-full mb-3"
+            breakpoints={{
+            640: {
+              slidesPerView: 2, // 2 slides for tablets
+            },
+            768: {
+              slidesPerView: 3, // 3 slides for small desktop screens
+            },
+            1024: {
+              slidesPerView: 4, // 4 slides for larger desktop screens
+            },
+          }}
         >
           <SwiperSlide>
             <img src={slide1} alt="" className="swiper-image" />
